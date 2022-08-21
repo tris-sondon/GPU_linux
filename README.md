@@ -8,7 +8,7 @@ Setups and configs to use NVIDIA GPU for ML
 
 ```bash
   # Install libraries to compile the code
-  sudo dnf install cmake ncurses-devel git gcc-c++
+  sudo dnf install cmake ncurses-devel gcc-c++
 
   git clone https://github.com/Syllo/nvtop.git
 
