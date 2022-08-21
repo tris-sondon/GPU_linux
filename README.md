@@ -18,5 +18,17 @@ Setups and configs to use NVIDIA GPU for ML
 ```
 
 
+## Tensorflow
+
+### Remove warnings
+
+```python
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+```
+
+
+
+
 
 
