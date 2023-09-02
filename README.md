@@ -1,5 +1,7 @@
 # Using local NVIDIA GPU with linux
 
+*Updated August 2023*
+
 Setups and configs to use NVIDIA GPU for ML
 
 ## Python 3.11.5 
