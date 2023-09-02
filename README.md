@@ -24,6 +24,46 @@ sudo dnf install libffi-devel
 ```
 
 
+
+## Tensorflow 
+
+My current version:  2.13.0  
+
+### Verify TF install
+
+```bash
+python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+tf.Tensor(689.1604, shape=(), dtype=float32)
+```
+
+
+### Verify GPU install
+
+```bash
+python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+```
+
+### Get TF version
+
+```bash
+python -c "import tensorflow as tf; print(tf.__version__)"
+2.13.0
+```
+
+
+
+### Remove warnings
+
+```python
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+```
+
+
+
+
+
 ## Monitor GPU usage
 
 ### Install nvtop
@@ -38,19 +78,4 @@ sudo dnf install libffi-devel
   cmake .. -DNVIDIA_SUPPORT=ON 
   sudo make install
 ```
-
-
-## Tensorflow
-
-### Remove warnings
-
-```python
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-```
-
-
-
-
-
 
