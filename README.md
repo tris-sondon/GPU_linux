@@ -8,6 +8,8 @@ Setups and configs to use NVIDIA GPU for ML
 
 Download source code from https://www.python.org/downloads/
 
+For specific FLAGS go to https://docs.python.org/3/using/configure.html
+
 ```bash
 tar xf Python-3.11.5.tar.xz
 cd Python-3.11.5
