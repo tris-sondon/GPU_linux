@@ -16,6 +16,12 @@ make
 sudo make install
 ```
 
+To avoid ctype module error in tensorflow, before compiling python install:
+
+
+```bash
+sudo dnf install libffi-devel
+```
 
 
 ## Monitor GPU usage
