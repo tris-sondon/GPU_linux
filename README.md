@@ -2,6 +2,22 @@
 
 Setups and configs to use NVIDIA GPU for ML
 
+## Python 3.11.5 
+
+### Compile from sources
+
+Download source code from https://www.python.org/downloads/
+
+```bash
+tar xf Python-3.11.5.tar.xz
+cd Python-3.11.5
+./configure
+make
+sudo make install
+```
+
+
+
 ## Monitor GPU usage
 
 ### Install nvtop
