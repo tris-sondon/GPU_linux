@@ -4,19 +4,7 @@ Setups and configs to use NVIDIA GPU for ML
 
 ## Python 3.11.5 
 
-### Compile from sources
-
 Download source code from https://www.python.org/downloads/
-
-For specific FLAGS go to https://docs.python.org/3/using/configure.html
-
-```bash
-tar xf Python-3.11.5.tar.xz
-cd Python-3.11.5
-./configure
-make
-sudo make install
-```
 
 To avoid ctype module error in tensorflow, before compiling python install:
 
@@ -25,6 +13,28 @@ To avoid ctype module error in tensorflow, before compiling python install:
 sudo dnf install libffi-devel
 ```
 
+Other libs I needed:
+
+```bash
+sudo dnf install sqlite-devel
+sudo dnf install bzip2-devel
+
+```
+
+
+
+
+### Compile from sources
+
+For specific FLAGS go to https://docs.python.org/3/using/configure.html
+
+```bash
+tar xf Python-3.11.5.tar.xz
+cd Python-3.11.5
+./configure --enable-loadable-sqlite-extensions
+make
+sudo make install
+```
 
 
 ## Tensorflow 
