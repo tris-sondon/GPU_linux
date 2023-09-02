@@ -1,4 +1,4 @@
-# GPU_linux
+# Using physical NVIDIA GPU with linux
 
 Setups and configs to use NVIDIA GPU for ML
 
