@@ -37,7 +37,7 @@ tf.Tensor(689.1604, shape=(), dtype=float32)
 ```
 
 
-### Verify GPU install
+### Verify that TF is using the GPU 
 
 ```bash
 python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
